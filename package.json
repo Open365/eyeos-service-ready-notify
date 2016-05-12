@@ -1,0 +1,28 @@
+{
+  "name": "eyeos-service-ready-notify",
+  "version": "0.0.26",
+  "description": "notifies when a service is ready",
+  "main": "src/serviceReadyNotify.js",
+  "author": "eyeOS",
+  "homepage": "http://www.eyeos.com/",
+  "scripts": {
+    "test": "mocha --ui tdd --recursive test/"
+  },
+  "dependencies": {
+    "node-request-retry": "1.0.0",
+    "native-dns": "0.7.0"
+  },
+  "devDependencies": {
+    "eyeos-gruntfile": "*",
+    "chai": "1.8.0",
+    "mocha": "1.13.0",
+    "sinon": "1.9.1",
+    "grunt": "0.4.5",
+    "grunt-npm": "0.0.2",
+    "grunt-cli": "0.1.9",
+    "grunt-init": "0.2.1",
+    "grunt-shell": "0.7.0",
+    "grunt-mocha-test": "0.11.0"
+  },
+  "license": "AGPL-3.0"
+}
