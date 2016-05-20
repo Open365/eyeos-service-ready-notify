@@ -26,7 +26,7 @@ var ServiceReadyNotify = function (registerManager) {
 
 ServiceReadyNotify.prototype.__getIp = function (cb) {
 	console.log('ServiceReadyNotify.__getIp');
-	childProcess.exec('hostname --all-ip-addresses', function(err, stdOut, stdErr) {
+	childProcess.exec('hostname -i', function(err, stdOut, stdErr) {
 
 	    var arr = stdOut.split('\n');
 	    var ip = '';
