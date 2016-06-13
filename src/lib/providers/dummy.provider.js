@@ -21,7 +21,9 @@ var DummyProvider = function () {};
 
 DummyProvider.prototype.addService = function (service, callback) {
 	console.log('Using dummy provider');
-	callback(true);
+	if (typeof callback == "function") {
+		callback(true);
+	}
 };
 
 module.exports = DummyProvider;
