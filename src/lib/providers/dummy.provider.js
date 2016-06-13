@@ -17,11 +17,11 @@
     along with this program. If not, see <http://www.gnu.org/licenses/>.
 */
 
-var settings = {
-	provider: process.env.EYEOS_SERVICE_DISCOVERY || 'serf',
-	providerHost: process.env.SERVICE_REGISTER_HOST || '',
-	providerPort: process.env.SERVICE_REGISTER_PORT || '',
-	providerServiceApiPath: process.env.SERVICE_REGISTER_API_PATH || ''
+var DummyProvider = function () {};
+
+DummyProvider.prototype.addService = function (service, callback) {
+	console.log('Using dummy provider');
+	callback(true);
 };
 
-module.exports = settings;
+module.exports = DummyProvider;
