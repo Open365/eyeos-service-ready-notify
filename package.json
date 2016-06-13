@@ -1,6 +1,6 @@
 {
   "name": "eyeos-service-ready-notify",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "description": "notifies when a service is ready",
   "main": "src/serviceReadyNotify.js",
   "author": "eyeOS",
